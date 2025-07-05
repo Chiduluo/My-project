@@ -1,4 +1,6 @@
-* {
+
+
+  * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,7 +15,6 @@ li {
   color: rgba(0, 0, 0, 0.479);
 }
 body {
-  font-size: 10px;
   width: 100%;
   height: 100%;
   position: relative;
@@ -24,120 +25,152 @@ body {
 
 .hamburger {
   cursor: pointer;
-  padding: 10px;
+  padding-top: 10px;
   z-index: 1001;
+ left: 35rem;
+  position: absolute;
+
 }
 .nav-menu {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex;
+  display: none;
   position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  background-color: white;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  z-index: 1000;
 }
 .nav-first {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 50px;
   margin-left: 9px;
+  width: 100%;
+  gap: 5rem;
+}
+#features{
+  margin-top: 6rem;
+  border-top: 1px solid #eee;
+  padding-top: 50px;
 }
 .nav-menu.active {
   display: block;
   text-align: center;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  width: 106%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
   background-color: #170f6af1;
+  z-index: 200;
 }
+.nav-menu.active
 .nav-item {
   padding: 15px 20px;
   border-bottom: 1px solid #eee;
+  width: 35rem;
+  margin-left: 4.5rem;
+  margin-top: rem;
 }
+.nav-menu .white{
+  width: 15rem;
+  margin-right: 19rem;
+  margin-top: 3rem;
+}
+.nav-menu.active li{
+  font-size: 30px;
+  margin-top: 2rem;
+}
+.nav-logo img{
+  justify-content: space-between;
+  width: 130px;
+  margin-top: 15rem;
+  padding-left: 5rem;
+  cursor: pointer;
+}
+
 .nav-link {
   text-decoration: none;
   color: white;
   font-weight: 500;
   display: block;
-  margin-top: 20px;
+  padding-bottom:1rem ;
 }
 
 #login {
   color: white;
-  width: 240px;
-  height: 40px;
-  border: 1px solid white;
-  padding: 10px 10px 10px 10px;
-  margin-left: 80px;
+  width: 29rem;
+  height: 80px;
+  border: 3px solid white;
+  padding: 10px 10px 10px 0;
+  margin-left: 130px;
+  margin-top: 70px;
+  font-weight: bold;
+  font-size:30px ;
 }
 
 .close-icon {
   display: none;
+  z-index: 1000;
 }
 .active .hamburger-icon {
   display: none;
 }
+.active .booksvg{
+  display: none;
+}
 .active .close-icon {
   display: block;
+  width: 40px;
+  margin-top: -0.3rem;
+  margin-left: 50px;
+  position: fixed;
+  z-index: 3000;
 }
-
-@media (min-width: 768px) {
-  .nav-menu {
-    display: flex;
-    position: static;
-    background-color: transparent;
-    box-shadow: none;
-  }
-
-  .nav-item {
-    border-bottom: none;
-    padding: 0 15px;
-  }
+.booksvg{
+  margin-left: 50px;
+  width: 250px;
 }
 #rightcurve {
-  width: 300px;
-  height: 180px;
-  background: rgb(94, 74, 207);
+  width: 550px;
+  height: 300px;
+  background: #5267df;
   position: relative;
-  left: 30rem;
-  top: 120px;
+  left: 130px;
+  top: 24rem;
   border-radius: 100em 0 0 100em;
 }
 #img1 {
-  height: 250px;
-  width: 350px;
+  height: 420px;
+  width: 650px;
   position: absolute;
-  top: 100px;
-  right: 10px;
+  top: 15rem;
+  left: 1rem;
+  
 }
 #midsection {
-  margin-top: -150px;
+  margin-top: 30rem;
   text-align: center;
-  width: 100%;
-  max-width: 300px;
-  margin-left: 20px;
+  margin-left: 5rem;
+  font-size: 25px;
+  width: 460px;
 }
 .btn1 {
   justify-content: space-between;
-  margin-left: 20px;
+  margin-left: 5rem;
+  margin-top: -1rem;
+  width: 460px;
+  display: flex;
 }
 #btn-chrome {
-  width: 10rem;
+  width: 15rem;
   height: 3rem;
   color: white;
-  background: rgb(94, 74, 207);
+  background: #5267df;
   border-radius: 5px 5px;
   border: none;
 }
 #btn-fox {
-  width: 10rem;
+  width: 15rem;
   height: 3rem;
   margin-left: 10px;
   border-radius: 5px 5px;
@@ -145,14 +178,17 @@ body {
   box-shadow: 0px 5px 5px 0px rgba(128, 128, 128, 0.525);
 }
 .features {
-  margin-top: 10rem;
+  margin-top: 15rem;
   text-align: center;
+   font-size: 23px;
+   margin-left: 6rem;
+    width: 460px;
 }
 .tabs {
   display: grid;
   border-bottom: 1px solid #ddd;
-  max-width: 400px;
-  margin: 20px auto;
+width: 460px;
+  margin: 20px 0 0 100px;
 }
 .tab {
   flex: 1;
@@ -177,31 +213,39 @@ body {
   background: #ff5252;
 }
 .leftcurve {
-  width: 300px;
-  height: 180px;
-  background: rgb(94, 74, 207);
+  width: 510px;
+  height: 300px;
+  background: #5267df;
   position: relative;
-  right: 120px;
+  right: 20px;
   top: 180px;
   border-radius: 0 100em 100em 0;
 }
 #img2 {
-  height: 250px;
-  width: 350px;
+  height: 350px;
+  width: 490px;
   position: absolute;
-  top: 56rem;
+  top: 125rem;
+  left: 4rem;
 }
 .bookmark {
   margin-top: 15rem;
   text-align: center;
+  font-size: 24px;
+  margin-left: 9rem;
+  min-width: 400px;
 }
 
 .download {
-  margin-top: 10rem;
+  margin-top: 15rem;
   text-align: center;
+  margin-left: 7rem;
+  width: 460px;
+  font-size: 24px;
 }
 #cards {
-  margin-left: 170px;
+  margin-left: 120px;
+  margin-top: 8rem;
 }
 .card {
   background: white;
@@ -209,53 +253,76 @@ body {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
   padding: 30px 20px;
-  width: 260px;
+  width: 350px;
+  height: 450px;
   margin-left: 55px;
-  margin-top: 20px;
+  margin-top: 100px;
   box-shadow: 0px 5px 5px 0px rgba(128, 128, 128, 0.525);
 }
+.dotted-line {
+    white-space: nowrap;
+    position: relative;
+    overflow: hidden;
+  }
+  .dotted-line::after {
+    content: "......................................";
+    letter-spacing: 6px;
+    font-size: 30px;
+    color: #9cbfdb;
+    display: inline-block;
+    vertical-align: 5px;
+    padding-left: 10px;
+    padding-top: 3rem;
+    
+  }
 
 .card img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 16px;
 }
 
 .card h2 {
-  margin: 0;
-  font-size: 18px;
+  margin: 12px;
+  font-size: 22px;
   color: #333;
 }
 
 .card p {
-  margin: 8px 0 24px;
-  font-size: 14px;
+  margin: 10px 0 24px;
+  font-size: 18px;
   color: #888;
 }
 
 .card button {
-  background-color: #4f46e5;
+  background-color: #5267df;
   color: white;
   border: none;
   padding: 10px 16px;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 18px;
   cursor: pointer;
+  margin-top:-2rem ;
 }
 
 .card button:hover {
-  background-color: #4338ca;
+  background-color: #5267df;
 }
 .frequent {
   text-align: center;
   margin-top: 10rem;
+  font-size: 24px;
+  margin-left: 9rem;
+  min-width: 420px;
 }
 .faq {
-  max-width: 500px;
+  width: 500px;
   margin: auto;
   justify-content: center;
   align-items: center;
-  margin-left: 200px;
+  margin-left: 80px;
+  margin-top: 2rem;
+  font-weight:bold;
 }
 .item {
   background: white;
@@ -269,8 +336,10 @@ body {
   justify-content: space-between;
   cursor: pointer;
   border-bottom: 1px solid gray;
-  width: 300px;
-  max-width: 300px;
+  width: 500px;
+}
+.question:hover{
+color: red;
 }
 .answer {
   padding: 0 15px;
@@ -283,25 +352,28 @@ body {
   max-height: 500px;
   padding: 10px;
 }
+.question i{
+  color: red;
+}
 #small-btn {
   margin-top: 2rem;
-  margin-left: 150px;
-  background-color: #4338ca;
+  margin-left: 17rem;
+  background-color: #5267df;
   height: 3rem;
-  width: 8rem;
+  width: 10rem;
   text-decoration: none;
   color: white;
   border-radius: 8px;
   border: none;
 }
 .footer1 {
-  background-color: #4338ca;
+  background-color: #5267df;
   color: white;
   padding: 40px 20px;
   text-align: center;
   margin-top: 7rem;
   clear: both;
-  width: 100%;
+  width: 680px;
 }
 .contact-form {
   width: 100%;
@@ -310,11 +382,13 @@ body {
 
 /* --- Input Container --- */
 .input-container {
+  width: 100%;
   position: relative;
   background-color: #ff5252; /* Red background for the error state */
   padding: 2px;
   border-radius: 5px;
   margin-bottom: 16px;
+  margin-left: 4.8rem;
 }
 
 /* This class is added by JavaScript when there is an error */
@@ -391,6 +465,7 @@ body {
   cursor: pointer;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: opacity 0.2s;
+   margin-left: 4.8rem;
 }
 
 .submit-btn:hover {
@@ -404,11 +479,11 @@ body {
   color: white;
   padding: 40px 20px;
   text-align: center;
-  width: 100%;
-  height: 90%;
+  width: 680px;
+  height: 30%;
 }
 .stats {
-  font-size: 24px;
+  font-size: 14px;
   font-weight: bold;
   letter-spacing: 1px;
   margin-bottom: 30px;
@@ -416,10 +491,11 @@ body {
 }
 
 .stats span {
-  color: #ff6b6b;
+  color: #fff;
+   font-size: 14px;
 }
 .heading {
-  font-size: 20px;
+  font-size: 28px;
   margin-bottom: 20px;
   line-height: 1.4;
   color: white;
@@ -435,12 +511,16 @@ body {
 }
 #bookmark2 {
   color: rgba(240, 248, 255, 0.257);
+  width: 18rem;
+}
+.listfoot{
+  margin-top: 4rem;
 }
 .listfoot li {
   list-style: none;
   color: white;
-  margin-top: 1rem;
-  font-size: 14px;
+  margin-top: 2.5rem;
+  font-size: 20px;
   cursor: pointer;
 }
 .logo-foot {
@@ -451,8 +531,7 @@ body {
   cursor: pointer;
   gap: 50px;
 }
-
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
 
   html body {
     width: 100%;
@@ -471,24 +550,35 @@ body {
   h2{
     font-size: 22px;
   }
-  #pio {
-    display: none;
-  }
   .nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 20rem;
+    margin-left: 55rem;
     gap: 2px;
-    
+    width: 600px;
+    text-align: center;
+    z-index: 1001px;
   }
+  .nav-menu img{
+    display: none;
+  }
+ #features{
+  border-top:none;
+  margin-top: -2.5rem;
+}
+#Pricing{
+  margin-top: 10px;
+}
+#Contact{
+  margin-top: 10px;
+}
   .nav-bar {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-    display: flex;
   }
   #menu {
     display: none;
@@ -508,57 +598,52 @@ body {
     color: black;
   }
   #login {
-    width: 90px;
-    height: 35px;
+    width: 120px;
+    height: 48px;
     background-color: red;
     color: white;
-    border-radius: 4px 4px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    border-radius: 5px 5px;
+    padding-top: 10px 10px 10px 10px;
     text-align: center;
     margin-left: 2px;
+    font-size: 18px;
+    margin-top: 2px;
 
   }
-  .booksvg {
-    fill: white;
-  }
   #login:hover {
-    width: 90px;
-    height: 35px;
+    width: 120px;
+    height: 45px;
     border: 1px solid red;
-    padding-top: 10px;
-    padding-left: 10px;
+    padding: 10px 10px 10px 10px;
     background-color: white;
     color: red;
   }
   .nav-branding {
-    margin-left: 40px;
+    margin-left: 70px;
     display: flex;
     justify-content: space-between;
     margin-top: 30px;
   }
-  .nav-branding {
-    margin-left: 50px;
+  .booksvg{
+    margin-top: -40px;
   }
   .nav-link:hover {
     color: red;
   }
   #rightcurve {
-    width: 300px;
-    height: 220px;
+    width: 550px;
+    height: 300px;
     background: #5267df;
     border-radius: 100em 0 0 100em;
-    margin-left: 30.2rem;
-    margin-top: 12rem;
+    margin-left:62.9rem;
+    margin-top: 2rem;
   }
   #img1 {
-    height: 22rem;
-    width: 30rem;
+    height: 32rem;
+    width: 45rem;
     position: absolute;
     top: 16rem;
-    left: 48rem;
+    left: 57rem;
   }
   .mid {
     display: grid;
@@ -567,7 +652,9 @@ body {
   }
   #midsection {
     text-align: left;
-    max-width: 36rem;
+    max-width: 38rem;
+    margin-top: -5rem;
+    align-items: start;
   }
   .simple {
     font-size: 43px;
@@ -576,7 +663,8 @@ body {
     text-align: left;
   }
   .btn1 {
-    justify-content: space-between;
+    justify-content: center;
+    margin-left: 10px;
   }
   #btn-chrome {
     width: 10rem;
@@ -615,9 +703,9 @@ body {
   .features {
     margin-top: 10rem;
     text-align: center;
-    margin-left: 18rem;
+    margin-left: 28rem;
     font-size: 22px;
-    max-width: 38rem;
+    width: 45rem;
   }
   .tabs {
     display: flex;
@@ -625,7 +713,7 @@ body {
     max-width: 700px;
     margin: 20px auto;
     width: 100rem;
-    margin-left: 15rem;
+    margin-left: 28rem;
   }
   .tab {
     flex: 1;
@@ -654,27 +742,27 @@ body {
   }
   .bookmark-desktop {
     display: block;
-    min-width: 380px;
+    min-width: 450px;
     margin-top: 320px;
-    margin-left: -1rem;
+    margin-left: 30rem;
     text-align: left;
-    font-size: 16px;
+    font-size: 22px;
     margin-left: -2rem;
   }
   .bookmark-desktop p {
     color: gray;
-    font-size: 18px;
-    max-width: 410px;
+    font-size: 22px;
+    max-width: 500px;
   }
   .small-btn {
-    right: 28rem;
+    right: 36rem;
     position: absolute;
     font-weight: bold;
   }
   .mid-left {
     display: flex;
     flex-direction: row;
-    gap: 10rem;
+    gap: 18rem;
     padding-right: 0px;
   }
   .leftcurve {
@@ -682,27 +770,32 @@ body {
     position: relative;
     top: 25rem;
     border-radius: 0 100em 100em 0;
-    width: 35rem;
-    height: 250px;
+    width: 45rem;
+    height: 300px;
   }
   #img2 {
-    height: 20rem;
-    width: 30rem;
+    height: 25rem;
+    width: 40rem;
     position: absolute;
-    top: 76rem;
-    left: 4rem;
+    top: 82rem;
+    left: 7rem;
   }
   .download {
     text-align: center;
     margin-top: 30rem;
-    
+    margin-left: 20rem; 
+  }
+  .download h2{
+    padding-left: 12rem;
+    font-size: 28px;
+    width: 800px;
   }
    .download p{
-max-width: 1000px;
+width: 800px;
 padding-left: 12rem;
    }
   #cards {
-    margin-left: 8rem;
+    margin-left: 18rem;
     display: flex;
     margin-top: 2rem;
   }
@@ -743,6 +836,7 @@ padding-left: 12rem;
     display: inline-block;
     vertical-align: 3px;
     padding-left: 10px;
+    margin-top: -80px;
   }
   .card img {
     width: 60px;
@@ -771,6 +865,7 @@ padding-left: 12rem;
     border-radius: 8px;
     font-size: 14px;
     cursor: pointer;
+  
   }
   .card button:hover {
     background-color: white;
@@ -780,16 +875,15 @@ padding-left: 12rem;
   .frequent{
     text-align: center;
     margin-top: 5rem;
-    margin-left: 17rem;
+    margin-left: 29rem;
     font-size: 22px;
     max-width: 45rem;
   }
   .faq {
     max-width: 600px;
-    margin: auto;
     justify-content: center;
     align-items: center;
-    margin-left: 20rem;
+    margin-left: 32rem;
     margin-top: 2rem;
     width: 600px;
     font-size: 16px;
@@ -833,15 +927,16 @@ padding-left: 12rem;
     color: white;
     border-radius: 8px;
     border: none;
-    margin-left: 34rem;
+    margin-left: 46rem;
   }
   .footer1 {
     background-color:#5267df;
     color: white;
     text-align: center;
     margin-top: 70px;
-    width: 78.9rem;
+    width:  105.4rem;
     height: 25rem;
+    /* position: absolute; */
   }
   #foot-mobile {
     display: none;
@@ -878,7 +973,7 @@ padding-left: 12rem;
     position: relative;
     background-color: #ff5252; /* Red background for the error state */
     padding: 2px;
-    left: 25rem;
+    left: 27rem;
     border-radius: 5px;
     margin-bottom: 16px;
     width: 300px;
@@ -957,7 +1052,7 @@ padding-left: 12rem;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: opacity 0.2s;
-    margin-left: 28rem;
+    margin-left: 30rem;
     height: 50px;
     
   
@@ -985,9 +1080,10 @@ padding-left: 12rem;
     align-items: center;
     color: white;
     bottom: 0;
-    width: 78.8;
-    height: 2.5rem;
-    flex-shrink: 0;
+    width: 105.4rem;
+    height: 4rem;
+    bottom: 0;
+    position: absolute;
   }
 
   .nav-links {
@@ -1045,7 +1141,3 @@ padding-left: 12rem;
     color: red;
   }
 }
-@media screen and (min-width: 1024px) {
-
-}
-
