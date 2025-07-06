@@ -531,7 +531,7 @@ color: red;
   cursor: pointer;
   gap: 50px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
 
   html body {
     width: 100%;
@@ -541,9 +541,9 @@ color: red;
     right: 0;
     left: 0;
   }
-  /* * {
+  * {
   outline: 1px solid red;
-} */
+}
   p {
     font-size: 22px;
   }
@@ -555,7 +555,7 @@ color: red;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 55rem;
+    margin-left: 75rem;
     gap: 2px;
     width: 600px;
     text-align: center;
@@ -635,7 +635,7 @@ color: red;
     height: 300px;
     background: #5267df;
     border-radius: 100em 0 0 100em;
-    margin-left:62.9rem;
+    margin-left:77.5rem;
     margin-top: 2rem;
   }
   #img1 {
@@ -643,7 +643,7 @@ color: red;
     width: 45rem;
     position: absolute;
     top: 16rem;
-    left: 57rem;
+    left: 74rem;
   }
   .mid {
     display: grid;
@@ -652,12 +652,12 @@ color: red;
   }
   #midsection {
     text-align: left;
-    max-width: 38rem;
+    max-width: 50rem;
     margin-top: -5rem;
     align-items: start;
   }
   .simple {
-    font-size: 43px;
+    font-size: 52px;
     margin-bottom: 0.3rem;
     color: #000;
     text-align: left;
@@ -934,14 +934,16 @@ padding-left: 12rem;
     color: white;
     text-align: center;
     margin-top: 70px;
-    width:  105.4rem;
+    width:  1920px;
     height: 25rem;
     /* position: absolute; */
   }
   #foot-mobile {
     display: none;
   }
-
+.email{
+  width: 100%;
+}
   .stats {
     font-size: 12px;
     font-weight: bold;
@@ -1080,10 +1082,9 @@ padding-left: 12rem;
     align-items: center;
     color: white;
     bottom: 0;
-    width: 105.4rem;
+    width: 100%;
     height: 4rem;
-    bottom: 0;
-    position: absolute;
+    
   }
 
   .nav-links {
@@ -1097,13 +1098,16 @@ padding-left: 12rem;
     color: white;
     font-weight: 500;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 22px;
     letter-spacing: 1px;
     position: relative;
     padding: 5px 0;
     text-decoration: none;
+    left: 5rem;
   }
-
+.nav-links a li{
+  margin-top: 10px;
+}
   .nav-links a:hover {
     color: red;
   }
@@ -1136,8 +1140,13 @@ padding-left: 12rem;
     text-decoration: none;
     font-size: 18px;
     color: white;
+    gap: 20px;
   }
   .social-icons a:hover {
     color: red;
+  }
+  .social-icons img{
+    width: 50px;
+    padding-left: 20px;
   }
 }
