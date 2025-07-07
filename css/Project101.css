@@ -546,21 +546,24 @@ color: red;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-    /* outline: 1px solid red; */}
+    outline: 1px solid red;}
   p {
     font-size: 22px;
   }
   h2{
     font-size: 22px;
   }
+  .nav-bar{
+    width: 100%;
+  }
   .nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 70rem;
+    margin-left: 80rem;
     gap: 2px;
-    width: 400px;
+    width:300px;
     text-align: center;
     z-index: 1001px;
   }
@@ -577,12 +580,12 @@ color: red;
 #Contact{
   margin-top: 10px;
 }
-  .nav-bar {
+.nav-bar {
     min-height: 70px;
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
-    width: 1440px;
+    width: 100%;
   }
   #menu {
     display: none;
@@ -612,7 +615,6 @@ color: red;
     margin-left: 2px;
     font-size: 18px;
     margin-top: 2px;
-
   }
   #login:hover {
     width: 120px;
@@ -647,10 +649,10 @@ color: red;
     width: 45rem;
     position: absolute;
     top: 16rem;
-    left: 55rem;
+    left: 58rem;
   }
-  .right-img{
-    width: 1440px;
+  .hero{
+    width: 100%;
   }
   .mid {
     display: grid;
@@ -784,7 +786,7 @@ color: red;
     height: 25rem;
     width: 40rem;
     position: absolute;
-    top: 82rem;
+    top: 85rem;
     left: 7rem;
   }
   .download {
