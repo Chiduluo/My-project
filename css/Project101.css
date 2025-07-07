@@ -531,7 +531,7 @@ color: red;
   cursor: pointer;
   gap: 50px;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1440px) {
 
   html body {
     width: 100%;
@@ -555,7 +555,7 @@ color: red;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 75rem;
+    margin-left: 49rem;
     gap: 2px;
     width: 600px;
     text-align: center;
@@ -635,7 +635,7 @@ color: red;
     height: 300px;
     background: #5267df;
     border-radius: 100em 0 0 100em;
-    margin-left:77.5rem;
+    margin-left:47.5rem;
     margin-top: 2rem;
   }
   #img1 {
@@ -643,7 +643,7 @@ color: red;
     width: 45rem;
     position: absolute;
     top: 16rem;
-    left: 74rem;
+    left: 42rem;
   }
   .mid {
     display: grid;
@@ -934,7 +934,7 @@ padding-left: 12rem;
     color: white;
     text-align: center;
     margin-top: 70px;
-    width:  1920px;
+    width:  1440px;
     height: 25rem;
     /* position: absolute; */
   }
@@ -1082,7 +1082,7 @@ padding-left: 12rem;
     align-items: center;
     color: white;
     bottom: 0;
-    width: 100%;
+    width: 1440px;
     height: 4rem;
     
   }
