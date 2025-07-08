@@ -532,7 +532,7 @@ color: red;
 }
 @media screen and (min-width: 1024px) {
 
-  html body {
+body {
     width: 100%;
     height: 100%;
     text-decoration: none;
@@ -546,12 +546,13 @@ color: red;
   box-sizing: border-box;
   font-family: sans-serif;
     /* outline: 1px solid red; */}
-  p {
-    font-size: 22px;
-  }
-  h2{
-    font-size: 22px;
-  }
+ h2 {
+  /* Font will try to be 5vw, but won't go below 2rem or above 3rem */
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+p {
+  font-size: 1.1rem; /* A flexible size that is better for accessibility */
+}
   .nav-bar{
     width: 100%;
   }
@@ -560,7 +561,7 @@ color: red;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 87rem;
+    margin-left: 72rem;
     gap: 2px;
     width:300px;
     text-align: center;
@@ -640,7 +641,7 @@ color: red;
     height: 300px;
     background: #5267df;
     border-radius: 100em 0 0 100em;
-    margin-left:76em;
+    margin-left:70em;
     margin-top: 2rem;
   }
   #img1 {
@@ -648,7 +649,7 @@ color: red;
     width: 45rem;
     position: absolute;
     top: 16rem;
-    left: 69rem;
+    left: 63rem;
   }
   .hero{
     width: 100%;
@@ -1156,5 +1157,26 @@ padding-left: 12rem;
   .social-icons img{
     width: 50px;
     padding-left: 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+#rightcurve {
+    width: 550px;
+    height: 300px;
+    background: #5267df;
+    border-radius: 100em 0 0 100em;
+    margin-left:76em;
+    margin-top: 2rem;
+  }
+  #img1 {
+    height: 32rem;
+    width: 45rem;
+    position: absolute;
+    top: 16rem;
+    left: 69rem;
+  }
+  .hero{
+    width: 100%;
   }
 }
