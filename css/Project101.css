@@ -1,5 +1,4 @@
 
-
   * {
   margin: 0;
   padding: 0;
@@ -531,7 +530,7 @@ color: red;
   cursor: pointer;
   gap: 50px;
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1024px) {
 
   html body {
     width: 100%;
@@ -546,7 +545,7 @@ color: red;
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-    outline: 1px solid red;}
+    /* outline: 1px solid red; */}
   p {
     font-size: 22px;
   }
@@ -561,7 +560,7 @@ color: red;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 85rem;
+    margin-left: 75rem;
     gap: 2px;
     width:300px;
     text-align: center;
@@ -641,7 +640,7 @@ color: red;
     height: 300px;
     background: #5267df;
     border-radius: 100em 0 0 100em;
-    margin-left:77.5em;
+    margin-left:62.9em;
     margin-top: 2rem;
   }
   #img1 {
@@ -649,7 +648,7 @@ color: red;
     width: 45rem;
     position: absolute;
     top: 16rem;
-    left: 70rem;
+    left: 55rem;
   }
   .hero{
     width: 100%;
@@ -661,12 +660,12 @@ color: red;
   }
   #midsection {
     text-align: left;
-    max-width: 50rem;
+    max-width: 80rem;
     margin-top: -5rem;
     align-items: start;
   }
   .simple {
-    font-size: 52px;
+    font-size: 40px;
     margin-bottom: 0.3rem;
     color: #000;
     text-align: left;
@@ -764,7 +763,7 @@ color: red;
     max-width: 500px;
   }
   .small-btn {
-    right: 36rem;
+    right: -5rem;
     position: absolute;
     font-weight: bold;
   }
