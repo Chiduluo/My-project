@@ -561,7 +561,7 @@ color: red;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
-    margin-left: 80rem;
+    margin-left: 85rem;
     gap: 2px;
     width:300px;
     text-align: center;
@@ -641,7 +641,7 @@ color: red;
     height: 300px;
     background: #5267df;
     border-radius: 100em 0 0 100em;
-    margin-left:62.9em;
+    margin-left:77.5em;
     margin-top: 2rem;
   }
   #img1 {
@@ -649,7 +649,7 @@ color: red;
     width: 45rem;
     position: absolute;
     top: 16rem;
-    left: 58rem;
+    left: 70rem;
   }
   .hero{
     width: 100%;
