@@ -640,7 +640,7 @@ color: red;
     height: 300px;
     background: #5267df;
     border-radius: 100em 0 0 100em;
-    margin-left:77em;
+    margin-left:76em;
     margin-top: 2rem;
   }
   #img1 {
@@ -763,7 +763,7 @@ color: red;
     max-width: 500px;
   }
   .small-btn {
-    right: 36rem;
+    right: 42rem;
     position: absolute;
     font-weight: bold;
   }
